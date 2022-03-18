@@ -46,10 +46,7 @@ void PlayingCard::printCard()
     std::cout << "This card is ";
 
     switch (value)
-    {
-    case Ace:
-        std::cout << "an Ace ";
-        break;
+    {    
     case Two:
         std::cout << "a Two ";
         break;
@@ -85,6 +82,9 @@ void PlayingCard::printCard()
         break;
     case King:
         std::cout << "a King ";
+        break;
+    case Ace:
+        std::cout << "an Ace ";
         break;
     }
 

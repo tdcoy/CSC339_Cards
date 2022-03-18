@@ -15,7 +15,6 @@ public:
     };
     enum cardValue
     {
-        Ace,
         Two,
         Three,
         Four,
@@ -27,7 +26,8 @@ public:
         Ten,
         Jack,
         Queen,
-        King
+        King,
+        Ace
     };
     bool compareSuit(PlayingCard);
     bool compareValue(PlayingCard);
