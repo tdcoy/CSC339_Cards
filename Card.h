@@ -27,7 +27,7 @@ public:
     };
 
 public:
-    Card(int suit, int value);
+    Card(int _suit, int _value);
     ~Card();
 
 public:

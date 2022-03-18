@@ -3,10 +3,10 @@
 
 #include "Card.h"
 
-Card::Card(int suit, int value)
+Card::Card(int _suit, int _value)
 {
-    this->suit = static_cast<cardSuit>(suit);
-    this->value = static_cast<cardValue>(value);
+    this->suit = static_cast<cardSuit>(_suit);
+    this->value = static_cast<cardValue>(_value);
 }
 
 Card::~Card()
