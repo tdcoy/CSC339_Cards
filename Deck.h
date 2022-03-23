@@ -9,8 +9,10 @@ public:
     ~Deck();
 
 public:
-    std::vector<Card> cards;
+    std::vector<Card*> cards;
 
 public:
     void printDeck();
+    void shuffleDeck();
+    Card* drawCard();
 };

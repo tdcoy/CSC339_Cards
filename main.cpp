@@ -1,15 +1,26 @@
 #include <iostream>
 #include <stdlib.h>
-#include <time.h>
 
 #include "Deck.h"
 
 int main(int argc, char **argv)
 {
-    srand(time(NULL));
-
     Deck deck;
-    deck.printDeck();
 
+    deck.shuffleDeck();
+    
+    std::cout << "Draw ten cards" << std::endl;
+    for (int i = 0; i < 9; i++)
+    {        
+        deck.drawCard()->printVisualCard();
+    }
+
+    deck.shuffleDeck();
+    
+    std::cout << "Shuffle and draw ten cards" << std::endl;
+    for (int i = 0; i < 9; i++)
+    {
+        deck.drawCard()->printVisualCard();
+    }
     return 0;
 }

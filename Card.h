@@ -36,6 +36,7 @@ public:
     bool compareGreaterThan(Card);
     bool compareLessThan(Card);
     void printCard();
+    void printVisualCard();
 protected:
     cardSuit suit;
     cardValue value;
